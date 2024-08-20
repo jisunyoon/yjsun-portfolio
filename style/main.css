@@ -344,16 +344,6 @@
        column-gap: 20px;
 }
 
-@media (max-width: 575px) {
-  .main-aboutme__image {
-    width: 180px;
-    height: 180px;
-  }
-  .main-aboutme__detail {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-}
 @media (max-width: 767px) {
   .header__logo {
     font-size: 28px;
@@ -375,6 +365,25 @@
   }
   .main-aboutme__content ul {
     grid-template-columns: 50% 50%;
+  }
+  .main-projects__detail .conduct__text dl {
+    grid-template-columns: 1fr 55%;
+  }
+}
+@media (max-width: 575px) {
+  .main-title {
+    font-size: 35px;
+  }
+  .main-aboutme__image {
+    width: 180px;
+    height: 180px;
+  }
+  .main-aboutme__detail {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .main-projects__detail .conduct__text dl {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 991px) {
