@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jisun's portfolio</title>
+    <meta name="keywords" content="포트폴리오, 프론트엔드, 웹퍼블리셔">
+    <meta name="description" content="프론트엔드 개발자 윤지선 포트폴리오입니다.">
+    <title>윤지선 | 프론트엔드 개발자 포트폴리오</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="yjsun's portfolio">
+    <meta property="og:image" content="/images/jisunyoon.png">
+    <meta property="og:url" content="https://yjsun-portfolio.netlify.app/">
+    <meta property="og:description" content="프론트엔드 개발자 윤지선 포트폴리오입니다.">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/main.css">
 </head>
@@ -14,10 +21,10 @@
             <div class="header__inner">
                 <h1 class="header__logo">JISUN's Portfolio</h1>
                 <ul class="header__menu">
-                    <li><a href="#aboutme"></a>About me</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li data-target="#aboutme">About me</li>
+                    <li data-target="#skills">Skills</li>
+                    <li data-target="#projects">Projects</li>
+                    <li data-target="#contact">Contact</li>
                 </ul>
             </div>
         </header>
@@ -107,7 +114,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main-skills">
+            <section class="main-skills" id="skills">
                 <div class="main-inner">
                     <h2 class="main-title">SKILLS</h2>
                     <div class="main-box">
@@ -124,7 +131,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main-projects">
+            <section class="main-projects" id="projects">
                 <div class="main-inner">
                     <h2 class="main-title">PROJECTS</h2>
                     <div class="main-box">
@@ -155,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main-box">
+                    <div class="main-box" id="projects">
                         <strong class="main-projects__title">삼성엔지니어링 리뉴얼</strong>
                         <p class="main-projects__sub">2021/03/02 ~ 2021/05/14 (개인 프로젝트)</p>
                         <div class="main-projects__detail">
@@ -217,9 +224,7 @@
                         <div class="main-projects__detail">
                             <p>개인 포트폴리오 웹페이지입니다.</p>
                             <div class="conduct">
-                                <div class="conduct__image">
-                                    <img src="" alt="">
-                                </div>
+                                <span class="conduct__image" style="background-image:url(image/jisunyoon.png);"></span>
                                 <div class="conduct__text">
                                     <dl>
                                         <dt>구현 완료</dt>
@@ -231,11 +236,11 @@
                                     </dl>
                                     <dl>
                                         <dt>GitHub</dt>
-                                        <dd><a href="" target="_blank"></a></dd>
+                                        <dd><a href="https://github.com/jisunyoon/yjsun-portfolio" target="_blank">https://github.com/jisunyoon/yjsun-portfolio</a></dd>
                                     </dl>
                                     <dl>
                                         <dt>URL</dt>
-                                        <dd><a href="" target="_blank"></a></dd>
+                                        <dd><a href="https://yjsun-portfolio.netlify.app/" target="_blank">https://yjsun-portfolio.netlify.app/</a></dd>
                                     </dl>
                                 </div>   
                             </div>
@@ -243,7 +248,7 @@
                     </div>                                                            
                 </div>
             </section>
-            <section class="main-contact">
+            <section class="main-contact" id="contact">
                 <div class="main-inner">
                     <h2 class="main-title">CONTACT</h2>
                     <div class="main-contact__detail">
@@ -253,9 +258,6 @@
                 </div>
             </section>
         </div>
-        <aside>
-            <button type="button" class="btn btn--top"></button>
-        </aside>
         <footer id="footer" class="footer">
             <p>&copy; 2024. JISUN YOON. All rights reserved.</p>
         </footer>
