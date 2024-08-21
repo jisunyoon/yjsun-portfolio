@@ -241,7 +241,7 @@ body{font-family: 'Roboto', 'Noto Sans KR', sans-serif;}
                 &::after{display:none;}
             }
         }
-        &-box img{width:100%;}
+        &-box img{width:100%; height:auto;}
         &-aboutme{
             &__content ul{
                 grid-template-columns:50% 50%;
