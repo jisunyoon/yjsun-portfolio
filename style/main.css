@@ -1,9 +1,16 @@
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+}
+.header a {
   color: #fff;
+  text-decoration: none;
 }
 .header__inner {
   display: flex;
@@ -19,6 +26,8 @@
   z-index: 2;
   background-color: #fff;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+}
+.header--active a {
   color: #070F2B;
 }
 .header--active .header__menu li {
@@ -91,6 +100,23 @@
   height: 28px;
 }
 
+.btn-top {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  width: 42px;
+  height: 42px;
+  color: #070F2B;
+  font-weight: 600;
+}
+.btn-top--hide {
+  display: none;
+}
+
 .main-inner {
   margin: 0 auto;
   padding: 60px 0;
@@ -100,9 +126,6 @@
 }
 .main-inner li {
   list-style: none;
-}
-.main-inner a {
-  color: #222;
 }
 .main-title {
   margin: 40px 0;
@@ -157,7 +180,7 @@
   justify-content: center;
   margin: 0 4px;
   background-color: #070F2B;
-  border-radius: 20px;
+  border-radius: 50%;
   height: 80px;
   width: 80px;
   color: #555;

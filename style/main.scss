@@ -8,9 +8,10 @@
 //      사용 페이지 :
 //          index
 //--------------------------------------------------------
+body{font-family: 'Roboto', 'Noto Sans KR', sans-serif;}
 .header{
     position:fixed; top:0; left:0; right:0;
-    color:#fff;
+    a{color:#fff; text-decoration:none;}
     &__inner{
         display:flex; align-items:center; justify-content:space-between;
         margin:0 auto; padding:10px; box-sizing:border-box;
@@ -19,7 +20,7 @@
     &--active{
         z-index:2;
         background-color:#fff; box-shadow:0 1px 8px rgba(0, 0, 0, 0.12);
-        color:#070F2B;
+        a{color:#070F2B;} 
         .header__menu li{color:#070F2B;}
     }
     &__logo{
@@ -54,13 +55,19 @@
     &--phone{background-position-y:-38px; height:48px;}
     &--email{background-position-y:-86px; height:28px;}
 }
+.btn-top{
+    position:fixed; bottom:50px; right:20px;
+    background-color:#fff; border:1px solid #eee; border-radius:50%;; box-shadow:0 5px 8px rgba(0,0,0,0.08); 
+    width:42px; height:42px;
+    color:#070F2B; font-weight:600;
+    &--hide{display:none;}
+}
 .main{
     &-inner{
         margin:0 auto; padding:60px 0;
         max-width:1260px;
         color:#222; font-size:16px;
         li{list-style:none;}
-        a{color:#222;}
     }
     &-title{
         margin:40px 0;
@@ -93,7 +100,7 @@
         }
         span{
           position:relative; display:flex; align-items:center; justify-content:center;
-          margin:0 4px; background-color:#070F2B; border-radius:20px;
+          margin:0 4px; background-color:#070F2B; border-radius:50%;
           height:80px; width:80px;
           color:#555; font-size:50px; font-weight:700; cursor:pointer; 
           box-shadow:-1px -1px 4px rgba(255, 255, 255, 0.05), 4px 4px 6px rgba(0, 0, 0, 0.2), inset -1px -1px 4px rgba(255, 255, 255, 0.05), inset 1px 1px 1px rgba(0, 0, 0, 0.1);
