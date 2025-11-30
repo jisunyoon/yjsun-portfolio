@@ -1,0 +1,4 @@
+[build]
+  image = "ubuntu-22.04"
+  publish = "."
+
