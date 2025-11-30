@@ -1,4 +1,5 @@
 [build]
   image = "ubuntu-22.04"
+  command = "echo 'No build step required for static site'"
   publish = "."
 
